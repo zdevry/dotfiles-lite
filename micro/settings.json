@@ -1,0 +1,8 @@
+{
+    "basename": true,
+    "colorscheme": "material-transparent",
+    "ftoptions": false,
+    "statusformatl": "$(filename) $(modified)| [$(line)/$(lines)]: $(col)",
+    "statusformatr": "$(opt:filetype) | $(opt:encoding) $(opt:fileformat)",
+    "tabstospaces": true
+}
