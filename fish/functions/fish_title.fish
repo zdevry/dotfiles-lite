@@ -1,7 +1,16 @@
+function title_basename
+    if [ $PWD = $HOME ]
+        echo '~'
+    else
+        path basename $PWD
+    end
+end
+
 function fish_title
     if set -q argv[1]
-        echo $argv[1]
+        set -l currprog (string split ' ' -f1 -- $argv[1])
+        printf '%s@%s' $currprog (title_basename)
     else
-        prompt_pwd --dir-length 0
+        title_basename
     end
 end

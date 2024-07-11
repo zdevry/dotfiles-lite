@@ -1,27 +1,36 @@
+
+function prompt_errcode
+    set -l errcode $argv[1]
+    [ $errcode = 0 ] && return
+
+    set_color brred
+    printf '∴ %s ' $errcode
+    set_color normal
+end
+
+function prompt_git
+    set __fish_git_prompt_char_stateseparator ''
+    set __fish_git_prompt_show_dirty_state 1
+    
+    set -l prompt (fish_git_prompt) || return 0
+    set_color e26b16
+    printf '%s ' (string replace ' (' '󰘬 ' -- $prompt | string replace ')' '')
+    set_color normal
+end
+
 function fish_prompt
-    set -l previous_status $status
-
-    set -l err_code_color (set_color brblack)
-    if [ $previous_status != 0 ]
-        set err_code_color (set_color -o brred)
-    end
-
+    prompt_errcode $status
+    
     set -l cwd (prompt_pwd --dir-length 0)
+    set_color green
+    printf '󰉋 %s ' $cwd
+    
+    prompt_git
 
-    if [ "$TERM" != "linux" ]
-        echo -n $err_code_color"∴ $previous_status$(set_color normal) "
-        echo -n "$(set_color green)󰉋 $cwd"
-
-        if [ (string length "$cwd") -gt 50 ]
-            echo -en "\n "
-        else
-            echo -n " "
-        end
-        
-        echo -n "$(set_color blue -o)→ $(set_color normal)"
-    else
-        echo -n $err_code_color"[$previous_status]$(set_color normal) "
-        echo -n "$(set_color green)$cwd "
-        echo -n "$(set_color blue -o)\$ $(set_color normal)"
+    set_color blue
+    if [ (string length $cwd) -gt 50 ]
+        printf '\n '
     end
+    echo -n '→ '
+    set_color normal
 end
