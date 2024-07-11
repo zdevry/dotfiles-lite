@@ -1,3 +1,5 @@
+set -x __fish_git_prompt_char_stateseparator ''
+set -x __fish_git_prompt_showdirtystate 1
 
 function prompt_errcode
     set -l errcode $argv[1]
@@ -8,12 +10,9 @@ function prompt_errcode
     set_color normal
 end
 
-function prompt_git
-    set __fish_git_prompt_char_stateseparator ''
-    set __fish_git_prompt_show_dirty_state 1
-    
+function prompt_git    
     set -l prompt (fish_git_prompt) || return 0
-    set_color e26b16
+    set_color f18125
     printf '%s ' (string replace ' (' '󰘬 ' -- $prompt | string replace ')' '')
     set_color normal
 end
