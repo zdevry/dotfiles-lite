@@ -28,8 +28,9 @@ function fish_prompt
 
     set_color blue
     if [ (string length $cwd) -gt 50 ]
-        printf '\n '
+        printf '\n 󰘍 '
+    else
+        echo -n '󰁔 '
     end
-    echo -n '→ '
     set_color normal
 end

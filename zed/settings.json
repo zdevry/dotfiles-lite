@@ -26,15 +26,18 @@
     "selections_menu": false
   },
   "ui_font_size": 16,
+  "ui_font_family": "Source Code Pro",
+  "ui_font_weight": 500,
   "buffer_font_size": 18,
-  "buffer_font_family": "JetBrains Mono NL",
+  "buffer_font_family": "Source Code Pro",
   "buffer_font_weight": 500,
   "base_keymap": "VSCode",
   "terminal": {
     "shell": {
       "program": "fish"
     },
-    "font_family": "JetBrainsMonoNL Nerd Font Mono",
+    "font_family": "SauceCodePro Nerd Font Mono",
+    "font_weight": 500,
     "working_directory": "current_project_directory"
   },
   "auto_update": false,
@@ -49,10 +52,10 @@
     "tab.inactive_background": "#00000000",
     "panel.background": "#00000000",
     "terminal.background": "#00000060",
-    "status_bar.background": "#21242b",
-    "title_bar.background": "#21242b",
-    "border": "#525766",
-    "border.variant": "#525766",
-    "scrollbar.track.border": "#3b404d"
+    "status_bar.background": "#202020",
+    "title_bar.background": "#202020",
+    "border": "#606060",
+    "border.variant": "#606060",
+    "scrollbar.track.border": "#404040"
   }
 }
