@@ -12,7 +12,7 @@ end
 
 function prompt_git    
     set -l prompt (fish_git_prompt) || return 0
-    set_color f18125
+    set_color magenta
     printf '%s ' (string replace ' (' '󰘬 ' -- $prompt | string replace ')' '')
     set_color normal
 end
