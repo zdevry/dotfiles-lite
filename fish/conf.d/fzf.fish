@@ -11,7 +11,7 @@ if [ $TERM = "linux" ]
         "--prompt='> ' --pointer='>'"
 else
     set -gx FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS" \
-        "--prompt='→ ' --pointer=→"
+        "--prompt='󰁔 ' --pointer=󰁔"
 end
 
 bind \ef "fzf_inline file"

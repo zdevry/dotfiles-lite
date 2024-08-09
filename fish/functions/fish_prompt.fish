@@ -6,7 +6,7 @@ function prompt_errcode
     [ $errcode = 0 ] && return
 
     set_color brred
-    printf '∴ %s ' $errcode
+    printf ' ∴ %s' $errcode
     set_color normal
 end
 
@@ -22,13 +22,13 @@ function fish_prompt
     
     set -l cwd (prompt_pwd --dir-length 0)
     set_color green
-    printf '󰉋 %s ' $cwd
+    printf ' 󰉋 %s ' $cwd
     
     prompt_git
 
     set_color blue
     if [ (string length $cwd) -gt 50 ]
-        printf '\n 󰘍 '
+        printf '\n  󰘍 '
     else
         echo -n '󰁔 '
     end

@@ -3,13 +3,13 @@ function fzf_inline
         fzf --height=40% --header="$dir is not a directory" < /dev/null
     else
         if [ -z "$dir" ]
-            set -lx FZF_DEFAULT_COMMAND "fd -LHt $argv[1]"
+            set -lx FZF_DEFAULT_COMMAND "fd -Ht $argv[1]"
             for file in (fzf --height=40% --multi)
                 commandline -i (string escape --no-quoted -- "$file")
                 commandline -i ' '
             end
         else
-            set -lx FZF_DEFAULT_COMMAND "fd -LHt $argv[1] . $dir"
+            set -lx FZF_DEFAULT_COMMAND "fd -Ht $argv[1] . $dir"
             commandline -tr ''
             for file in (fzf --height=40% --multi)
                 commandline -i (string escape --no-quoted -- "$file"\

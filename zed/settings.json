@@ -12,7 +12,7 @@
   },
   "assistant": {
     "button": false,
-    "version": "1"
+    "version": "2"
   },
   "collaboration_panel": {
     "button": false
@@ -26,36 +26,21 @@
     "selections_menu": false
   },
   "ui_font_size": 16,
-  "ui_font_family": "Source Code Pro",
+  "ui_font_family": "Iosevka Nerd Font Mono",
   "ui_font_weight": 500,
-  "buffer_font_size": 18,
-  "buffer_font_family": "Source Code Pro",
+  "buffer_font_size": 19,
+  "buffer_font_family": "Iosevka Nerd Font Mono",
   "buffer_font_weight": 500,
   "base_keymap": "VSCode",
   "terminal": {
     "shell": {
       "program": "fish"
     },
-    "font_family": "SauceCodePro Nerd Font Mono",
+    "font_family": "Iosevka Nerd Font Mono",
     "font_weight": 500,
-    "working_directory": "current_project_directory"
+    "working_directory": "current_project_directory",
+    "detect_venv": "off"
   },
   "auto_update": false,
-  "theme": "Andromeda",
-  "experimental.theme_overrides": {
-    "background.appearance": "transparent",
-    "background": "#181818cc",
-    "editor.background": "#00000000",
-    "editor.gutter.background": "#00000000",
-    "tab_bar.background": "#00000000",
-    "tab.active_background": "#17181c",
-    "tab.inactive_background": "#00000000",
-    "panel.background": "#00000000",
-    "terminal.background": "#00000060",
-    "status_bar.background": "#202020",
-    "title_bar.background": "#202020",
-    "border": "#606060",
-    "border.variant": "#606060",
-    "scrollbar.track.border": "#404040"
-  }
+  "theme": "Personal Theme"
 }

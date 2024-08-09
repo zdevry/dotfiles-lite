@@ -19,3 +19,4 @@ abbr gitc "git commit -m"
 abbr gitpom "git push origin main"
 
 abbr msn "meson compile -C build"
+abbr venvify "source .venv/bin/activate.fish"

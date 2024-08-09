@@ -2,7 +2,8 @@
   {
     "context": "Editor",
     "bindings": {
-      "ctrl-enter": "editor::NewlineBelow"
+      "ctrl-enter": "editor::NewlineBelow",
+      "ctrl-d": "editor::SelectNext"
     }
   }
 ]
