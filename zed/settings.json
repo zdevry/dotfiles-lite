@@ -12,7 +12,8 @@
   },
   "assistant": {
     "button": false,
-    "version": "2"
+    "version": "2",
+    "enabled": false
   },
   "collaboration_panel": {
     "button": false
