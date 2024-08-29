@@ -1,6 +1,6 @@
-alias ls "eza --icons"
-alias la "eza -la --icons --time-style=long-iso"
-abbr lstree "eza -RTL3 --icons"
+alias ls "eza --icons=never"
+alias la "eza -la --icons=never --time-style=long-iso"
+abbr lstree "eza --icons=never -RTL3"
 
 alias cp "cp -v"
 alias mv "mv -v"

@@ -6,13 +6,8 @@ set -gx FZF_DEFAULT_OPTS \
     "--color=label:-1,prompt:red,pointer:blue,marker:bright-cyan,spinner:red" \
     "--border=sharp --preview-window=border-sharp --marker=+ --layout=reverse"
 
-if [ $TERM = "linux" ]
-    set -gx FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS" \
-        "--prompt='> ' --pointer='>'"
-else
-    set -gx FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS" \
-        "--prompt='󰁔 ' --pointer=󰁔"
-end
+set -gx FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS" \
+    "--prompt='> ' --pointer='>'"
 
 bind \ef "fzf_inline file"
 bind \ed "fzf_inline directory"

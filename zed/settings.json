@@ -27,21 +27,34 @@
     "selections_menu": false
   },
   "ui_font_size": 16,
-  "ui_font_family": "Iosevka Nerd Font Mono",
+  "ui_font_family": "Iosevka Fixed",
   "ui_font_weight": 500,
-  "buffer_font_size": 19,
-  "buffer_font_family": "Iosevka Nerd Font Mono",
+  "buffer_font_size": 21,
+  "buffer_font_family": "Iosevka Fixed",
   "buffer_font_weight": 500,
+  "buffer_line_height": {
+    "custom": 1.47
+  },
   "base_keymap": "VSCode",
   "terminal": {
     "shell": {
       "program": "fish"
     },
-    "font_family": "Iosevka Nerd Font Mono",
+    "font_family": "Iosevka Fixed",
     "font_weight": 500,
+    "font_size": 20,
+    "line_height": "standard",
     "working_directory": "current_project_directory",
     "detect_venv": "off"
   },
   "auto_update": false,
-  "theme": "Personal Theme"
+  "theme": "Personal Theme",
+  "lsp": {
+    "clangd": {
+      "binary": {
+        "path": "/usr/bin/clangd",
+        "arguments": ["-header-insertion=never"]
+      }
+    }
+  }
 }
