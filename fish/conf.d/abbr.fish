@@ -18,5 +18,6 @@ abbr gitall "git add ."
 abbr gitc "git commit -m"
 abbr gitpom "git push origin main"
 
+abbr py python
 abbr msn "meson compile -C build"
 abbr venvify "source .venv/bin/activate.fish"

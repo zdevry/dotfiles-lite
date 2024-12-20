@@ -4,5 +4,8 @@
     "ftoptions": false,
     "statusformatl": "$(filename) $(modified)| [$(line)/$(lines)]: $(col)",
     "statusformatr": "$(opt:filetype) | $(opt:encoding) $(opt:fileformat)",
-    "tabstospaces": true
+    "tabstospaces": true,
+    "*.comp": {
+        "filetype": "glsl"
+    }
 }

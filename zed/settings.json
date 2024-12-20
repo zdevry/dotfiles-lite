@@ -45,7 +45,10 @@
     "font_size": 20,
     "line_height": "standard",
     "working_directory": "current_project_directory",
-    "detect_venv": "off"
+    "detect_venv": "off",
+    "toolbar": {
+      "breadcrumbs": false
+    }
   },
   "auto_update": false,
   "theme": "Personal Theme",
@@ -54,6 +57,16 @@
       "binary": {
         "path": "/usr/bin/clangd",
         "arguments": ["-header-insertion=never"]
+      }
+    },
+    "texlab": {
+      "settings": {
+        "texlab": {
+          "build": {
+            "onSave": false,
+            "forwardSearchAfter": false
+          }
+        }
       }
     }
   }

@@ -3,7 +3,8 @@
     "context": "Editor",
     "bindings": {
       "ctrl-enter": "editor::NewlineBelow",
-      "ctrl-d": "editor::SelectNext"
+      "ctrl-d": "editor::SelectNext",
+      "ctrl-q": "zed::NoAction"
     }
   }
 ]
